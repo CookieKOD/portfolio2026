@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Marie A. A. Sène · Ingénieure IA & Big Data</title>
+  <meta name="description" content="Portfolio de Marie A. A. Sène (CookieKOD), ingénieure IA & Big Data à Dakar : RAG médical, vision par ordinateur, agents et data engineering." />
+  <meta property="og:title" content="Marie A. A. Sène · Ingénieure IA & Big Data" />
+  <meta property="og:description" content="RAG médical, vision par ordinateur, agents, data engineering." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍪</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#projets">Aller aux projets</a>
+
+  <header class="top">
+    <a class="brand" href="#" id="brand"></a>
+    <nav aria-label="Navigation principale">
+      <a href="#korai">Projet phare</a>
+      <a href="#projets">Projets</a>
+      <a href="#competences">Compétences</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-name">
+      <div class="hero-id">
+        <img id="avatar" alt="" width="72" height="72" />
+        <p id="hero-meta" class="hero-meta"></p>
+      </div>
+      <h1 id="hero-name"></h1>
+      <p id="hero-title" class="hero-title"></p>
+      <p id="hero-pitch" class="hero-pitch"></p>
+
+      <div class="ask">
+        <label for="query" class="ask-label">Cherchez dans mes projets par technologie ou domaine</label>
+        <div class="ask-box">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <input id="query" type="search" placeholder="RAG, Scala, vision, Power BI…" autocomplete="off" />
+        </div>
+        <div class="chips" id="chips" role="group" aria-label="Recherches suggérées"></div>
+      </div>
+    </section>
+
+    <section id="korai" class="featured" aria-labelledby="korai-title"></section>
+
+    <section id="projets" class="projects" aria-labelledby="projets-title">
+      <div class="section-head">
+        <h2 id="projets-title">Projets</h2>
+        <p id="result-count" class="result-count" aria-live="polite"></p>
+      </div>
+      <ol id="project-list" class="project-list"></ol>
+      <p id="empty" class="empty" hidden>Aucun projet ne correspond à cette recherche. Essayez un terme plus large comme « python » ou effacez la recherche.</p>
+      <details class="others">
+        <summary>Autres réalisations (développement web et logiciel)</summary>
+        <ul id="others"></ul>
+      </details>
+    </section>
+
+    <section id="competences" class="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Compétences</h2>
+      <div id="skills" class="skills-grid"></div>
+    </section>
+
+    <section id="parcours" class="timeline" aria-labelledby="parcours-title">
+      <h2 id="parcours-title">Parcours</h2>
+      <ol id="timeline"></ol>
+      <h3 class="cert-title">Certifications</h3>
+      <ul id="certs" class="certs"></ul>
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Travaillons ensemble</h2>
+      <p>Ouverte aux postes d'ingénieure IA, data scientist ou ML engineer, et aux collaborations de recherche en IA appliquée à la santé.</p>
+      <div id="contact-links" class="contact-links"></div>
+    </section>
+  </main>
+
+  <footer class="foot"><p id="foot"></p></footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
