@@ -155,10 +155,10 @@ window.PORTFOLIO = {
   ],
 
   certifications: [
-    { name: "Fundamentals of Deep Learning", by: "" },
+    { name: "Fundamentals of Deep Learning", by: "NVIDIA" },
     { name: "Introducing Generative AI with AWS", by: "AWS" },
     { name: "Machine Learning Foundations", by: "AWS Educate" },
-    { name: "Introduction to Cybersecurity", by: "" },
+    { name: "Introduction to Cybersecurity", by: "Cisco" },
     // Ajoutez ici le certificat Agent Architect quand vous l'aurez.
   ],
 };
