@@ -83,15 +83,6 @@ window.PORTFOLIO = {
       confidentialNote: "Projet réalisé en stage chez Sonatel. Code et données opérationnelles confidentiels.",
     },
     {
-      name: "Banc d'évaluation d'un RAG médical",
-      year: "2025",
-      tags: ["rag", "llm", "evaluation"],
-      summary:
-        "Notebook de recherche reproductible sur Kaggle en deux phases : sélection du LLM générateur par métriques RAGAS et tests statistiques, puis comparaison de cinq architectures RAG de complexité croissante. Optimisé pour tenir dans les 20 Go de disque de Kaggle.",
-      stack: ["Python", "RAGAS", "Qwen2.5-7B", "Hugging Face", "Kaggle"],
-      confidential: true,
-    },
-    {
       name: "API de nettoyage de données",
       year: "2025",
       tags: ["big data", "data engineering", "api"],
@@ -180,7 +171,7 @@ window.PORTFOLIO = {
     { name: "ML Foundations & Generative AI", by: "AWS" },
     { name: "AI Scientist Nanodegree", by: "Udacity" },
     { name: "Python Essentials", by: "Cisco" },
-    { name: "AI Explorer", by: "Founderz" },
-    { name: "AI Maker", by: "Founderz" },
+    { name: "Agent Explorer", by: "Founderz" },
+    { name: "Agent Maker", by: "Founderz" },
   ],
 };
