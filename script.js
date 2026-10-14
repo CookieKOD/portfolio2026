@@ -113,16 +113,32 @@
   $("#others").innerHTML = D.others.map((o) => `<li><a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.name)}</a></li>`).join("");
 
   // Compétences
-  $("#skills").innerHTML = D.skills.map((g) => `<div><h3>${esc(g.group)}</h3><ul>${g.items.map((i) => `<li>${esc(i)}</li>`).join("")}</ul></div>`).join("");
+  $("#skills").innerHTML = D.skills.map((g, i) => `<div class="${i === D.skills.length - 1 && D.skills.length % 4 !== 0 ? "" : ""}"><h3>${esc(g.group)}</h3><ul>${g.items.map((it) => `<li>${esc(it)}</li>`).join("")}</ul></div>`).join("");
 
-  // Parcours
-  $("#timeline").innerHTML = D.timeline.map((t) => `<li><span class="when">${esc(t.when)}</span><div><div class="what">${esc(t.what)}</div><div class="where">${esc(t.where)}</div></div></li>`).join("");
+  // Notions complémentaires (en cours d'apprentissage)
+  const learning = D.learning || [];
+  if (learning.length) {
+    $("#learning").innerHTML = learning.map((l) => `<li>${esc(l)}</li>`).join("");
+  } else {
+    $("#learning-wrap").remove();
+  }
+
+  // Expérience professionnelle & Formation
+  const tlItem = (t) => `<li><span class="when">${esc(t.when)}</span><div><div class="what">${esc(t.what)}</div><div class="where">${esc(t.where)}</div></div></li>`;
+  $("#experience-list").innerHTML = (D.experience || []).map(tlItem).join("");
+  $("#formation-list").innerHTML = (D.education || []).map(tlItem).join("");
 
   // Certifications
   const certs = D.certifications || [];
   if (certs.length) {
     $("#certs").innerHTML = certs.map((c) => `<li><b>${esc(c.name)}</b><span>${esc(c.by || "")}</span></li>`).join("");
-  } else { $("#certs").remove(); document.querySelector(".cert-title").remove(); }
+  } else { $("#certs").remove(); }
+
+  // Distinctions
+  const dist = D.distinctions || [];
+  if (dist.length) {
+    $("#distinctions").innerHTML = dist.map((c) => `<li><b>${esc(c.name)}</b><span>${esc(c.note || "")}</span></li>`).join("");
+  } else { $("#distinctions-wrap").remove(); }
 
   // Contact
   const L = D.links, c = [];
