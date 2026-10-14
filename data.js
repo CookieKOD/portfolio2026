@@ -158,15 +158,21 @@ window.PORTFOLIO = {
 
   learning: ["Agentic AI", "Multi-Agent Systems", "Model Context Protocol (MCP)", "Microsoft Copilot Studio", "Azure AI Foundry", "Microsoft 365 Copilot", "Amazon Bedrock", "Amazon SageMaker AI"],
 
-  timeline: [
-    { when: "2025", what: "Data Engineering Competition — DataForge Africa (Zindi / FORCE-N)", where: "9ᵉ place sur 15 équipes" },
-    { when: "2026", what: "Formation AI Agent Architect (Founderz × Microsoft)", where: "Projet final : solution multi-agents sur Microsoft Foundry" },
-    { when: "janv. – juin 2026", what: "Ingénieure Software & Data / IA, Data Innovation Centre", where: "Plateforme KORAI : cadrage des besoins, conception, tests terrain et déploiement avec le service ORL du CHU de Fann, sous la direction du Pr Mouhamadou Lamine Ba" },
+  education: [
     { when: "2024 – 2026", what: "Master Intelligence Artificielle & Big Data", where: "École Supérieure Polytechnique, UCAD, Dakar" },
-    { when: "2024", what: "Stagiaire Développement logiciel & Data, SENELEC", where: "API REST (Express.js), base MySQL, documentation Swagger/OpenAPI pour la collecte de signatures numériques" },
     { when: "2023 – 2024", what: "Licence Génie Logiciel et Systèmes d'Information", where: "École Supérieure Polytechnique, UCAD, Dakar" },
-    { when: "2023", what: "Stagiaire Data & Développement logiciel, Sonatel", where: "Modélisation de données d'incidents réseau, API REST (LoopBack 4) et interface Angular de suivi des KPI" },
     { when: "2021 – 2023", what: "Diplôme Supérieur de Technologie en informatique", where: "École Supérieure Polytechnique, UCAD, Dakar" },
+    { when: "2026", what: "Formation AI Agent Architect (Founderz × Microsoft)", where: "Projet final : solution multi-agents sur Microsoft Foundry" },
+  ],
+
+  experience: [
+    { when: "janv. – juin 2026", what: "Ingénieure Software & Data / IA, Data Innovation Centre", where: "Plateforme KORAI : cadrage des besoins, conception, tests terrain et déploiement avec le service ORL du CHU de Fann, sous la direction du Pr Mouhamadou Lamine Ba" },
+    { when: "2024", what: "Stagiaire Développement logiciel & Data, SENELEC", where: "API REST (Express.js), base MySQL, documentation Swagger/OpenAPI pour la collecte de signatures numériques" },
+    { when: "2023", what: "Stagiaire Data & Développement logiciel, Sonatel", where: "Modélisation de données d'incidents réseau, API REST (LoopBack 4) et interface Angular de suivi des KPI" },
+  ],
+
+  distinctions: [
+    { name: "Data Engineering Competition — DataForge Africa (Zindi / FORCE-N)", note: "9ᵉ place sur 15 équipes, 2025" },
   ],
 
   certifications: [
